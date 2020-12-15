@@ -1,0 +1,222 @@
+main {
+  width: 100%;
+  height: auto;
+}
+section.cards {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(to right, rgb(188, 96, 251), #7f60fb);
+}
+.row {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  height: 22em;
+  width: 19em;
+  background: #eee;
+  color: rgb(127, 96, 251);
+  border-radius: 1rem;
+  margin: 0 4rem;
+  transition: 0.3s ease;
+}
+.card:hover > .card_top {
+  background-color: rgb(127, 96, 251);
+  color: #eee;
+}
+.card:hover {
+  transform: scale(1.1) translateY(-10px);
+}
+.card_top {
+  width: 100%;
+  height: 50%;
+  background: #eee;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+.card_top i {
+  font-size: 4rem;
+}
+.card_bottom {
+  width: 100%;
+  height: 50%;
+  background: #eee;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  text-align: center;
+}
+
+/* product css */
+
+.products {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  color: #eee;
+}
+.products::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 65vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../../../resources/p4.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.products .title {
+  text-align: center;
+  padding-top: 5rem;
+}
+.products .title span {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  color: #bc60fb;
+}
+.products .title div {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.product_list {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.product_list .product {
+  height: 32rem;
+  width: 18rem;
+  background: rgba(250, 248, 254, 0.9);
+  box-shadow: 0px 0px 28px 0px rgba(50, 50, 50, 0.31);
+  margin-top: 2rem;
+  margin: 2rem 1rem;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.product_list .product .product_top {
+  height: 61%;
+  width: 100%;
+}
+.product_list .product .product_top img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+}
+.product_list .product .product_bottom {
+  color: #111;
+  width: 100%;
+  height: 39%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.price {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #bc60fb;
+}
+.product_name {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.product:hover {
+  transform: scale(1.05) translateY(-15px);
+}
+
+.product_function {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  background: rgba(250, 248, 254, 0.9);
+  bottom: 0;
+  overflow: hidden;
+  box-shadow: 0px 0px 17px 0px rgba(50, 50, 50, 0.19);
+  transition: 0.3s ease;
+}
+.product_function li {
+  list-style: none;
+  height: 100%;
+  width: calc(18rem / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.product_function li::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #bc60fb;
+  z-index: -1;
+  top: 3.8rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2.5rem;
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2rem;
+  transition: 0.2s ease;
+}
+.product_function li:hover::before {
+  top: 0.3rem;
+}
+.product_function li:hover {
+  color: rgba(250, 248, 254, 0.9);
+}
+
+.reviews {
+  height: 100vh;
+  width: 100%;
+  background: url(../../../resources/wallpaper.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.reviews .review_head {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.reviews .review_content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.reviews .review_content .review {
+  width: 20rem;
+  margin: 0 1rem;
+  height: 20rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 50px;
+  border-radius: 5px;
+  backdrop-filter: blur(30px);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 0 10px rgba(50, 50, 50, 0.19);
+}

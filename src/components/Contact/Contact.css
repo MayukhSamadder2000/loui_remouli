@@ -1,0 +1,71 @@
+.contact {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, rgb(188, 96, 251), #7f60fb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_form {
+  height: 35rem;
+  width: 50rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  backdrop-filter: blur(30px);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 0 10px rgba(50, 50, 50, 0.19);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+.contact_form:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.contact_form input {
+  width: 70%;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  margin-top: 2rem;
+  background: transparent;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+.contact_form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.contact_form textarea {
+  font-size: 1.3rem;
+  width: 70%;
+  margin-top: 2rem;
+  background: transparent;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+.contact_form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.contact_form h1 {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+.btn-submit {
+  margin-top: 2rem;
+  background: linear-gradient(45deg, rgb(188, 96, 251), #7f60fb);
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  border: 2px solid #eee !important;
+  cursor: pointer;
+  border-radius: 2rem;
+  outline: none;
+}
+.btn-submit:hover {
+  color: #eee;
+}

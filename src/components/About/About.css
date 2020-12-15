@@ -1,0 +1,79 @@
+.about {
+  width: 100%;
+  min-height: 100vh;
+
+  background: url(../../resources/whiteWall.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Times New Roman", Times, serif;
+}
+.about_head {
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 1.3rem;
+  color: rgb(127, 96, 251);
+  text-shadow: 0px 0px 11px rgba(150, 150, 150, 0.63);
+  font-family: "Poppins", sans-serif;
+}
+.about_main_head {
+  text-align: center;
+  font-size: 3rem;
+  color: #111;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: capitalize;
+  margin-top: 2rem;
+}
+
+.about_content {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  color: rgba(150, 150, 150, 0.83);
+  margin-top: 1rem;
+}
+.team_information {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  height: 100%;
+  margin-top: 2rem;
+}
+.member {
+  height: 25rem;
+  width: 20rem;
+  background: #eee;
+  position: relative;
+  border-radius: 5px;
+  margin: 0 1rem;
+}
+.member1 {
+  background: url(../../resources/member1.jpg);
+  background-size: cover;
+}
+.member2 {
+  background: url(../../resources/member2.jpg);
+  background-size: cover;
+}
+.member3 {
+  background: url(../../resources/member3.jpg);
+  background-size: cover;
+}
+.member_info {
+  width: 15rem;
+  height: 8rem;
+  background: #faf8fe;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top-right-radius: 5px;
+}
+.member_info span {
+  width: 20px !important;
+  height: 5px !important;
+  background: #111;
+}
+.member_info p {
+  font-family: "Roboto Condensed", sans-serif;
+}
